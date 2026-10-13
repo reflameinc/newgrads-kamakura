@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>元大手人事が「就活」を伝授｜無料就活相談 60分｜EVANGE</title>
+<meta name="description" content="元大手人事が、ES・面接のやり方から業界の選び方まで一から教えます。無料のオンライン就活相談（60分）。選考ではありません。26・27・28卒対象。">
+<meta name="robots" content="noindex"><!-- 公開後も残す（社内ルール: メインLP以外はnoindex必須・2026-10-01 中山さん決定） -->
+<meta property="og:title" content="元大手人事が「就活」を伝授｜無料就活相談 60分">
+<meta property="og:description" content="何から始めればいいかわからなくて大丈夫。ES・面接のやり方から一から教えます。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://reflame.co.jp/lp/newgrads/kamakura/">
+<link rel="canonical" href="https://reflame.co.jp/lp/newgrads/kamakura/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+<style>
+/* ===========================================================
+   鎌倉さん｜新卒EVANGE 面談予約LP  v5（2026-09-26）
+   v4からの変更（鈴村さん指示）
+     - ヘッダー（ナビ）と追従CTAバーを廃止 → FVの写真をページ最上部まで通す
+     - FVの手書きコピーを削除／リード文とCTA文言を差し替え
+     - 「選ばれる理由」「サポートの流れ」セクションをまるごと削除
+     - PROFILE を実プロフィール（出身・大学・前職ほか）に差し替え、写真も実写に
+     - 参加者の声を VOICE（面談を受けた人たち）へ全面刷新＝BEFORE→AFTER＋丸アイコン
+     - 日程調整（BOOKING）と よくある質問（FAQ）の順番を入れ替え
+   ★色は :root の変数で切り替わる。書体はページ全体で Zen Kaku Gothic New 1本に統一。
+   =========================================================== */
+
+:root{
+  --o-light:#FFA45C;
+  --o:      #FA8231;
+  --o-deep: #EF6C12;
+  --o-text: #C9541A;
+  --grad:   linear-gradient(135deg, var(--o-light) 0%, var(--o-deep) 100%);
+
+  --white:  #FFFFFF;
+  --cream:  #FFFBF7;
+  --peach:  #FFF3E9;
+  --ink:    #1E1B19;
+  --ink-70: rgba(30,27,25,.72);
+  --ink-55: rgba(30,27,25,.56);
+  --ink-40: rgba(30,27,25,.40);
+  --line:   rgba(30,27,25,.10);
+  --radius: 20px;
+
+  --font-hero:  "Zen Kaku Gothic New",sans-serif;   /* ページ全体で1書体 */
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--white); color:var(--ink);
+  font-family:"Zen Kaku Gothic New",-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;
+  font-weight:500; line-height:1.9; letter-spacing:.02em;
+  -webkit-font-smoothing:antialiased; overflow-x:hidden;
+}
+img{max-width:100%; display:block}
+a{color:inherit}
+.en{font-weight:800; letter-spacing:.06em}
+
+.wrap{width:min(1180px,calc(100% - 44px)); margin-inline:auto}
+section{position:relative}
+
+/* ---------- 共通：セクション見出し ---------- */
+.sec{padding:clamp(66px,8.5vw,116px) 0; position:relative}
+.sec-label{
+  display:inline-flex; align-items:center; gap:9px;
+  font-size:12px; font-weight:800; letter-spacing:.22em; color:var(--o-text); margin-bottom:14px;
+}
+.sec-label::before{content:""; width:24px; height:2px; border-radius:2px; background:var(--o-deep)}
+.sec-title{
+  font-family:var(--font-hero); font-weight:900;
+  font-size:clamp(25px,4vw,40px); line-height:1.55; margin:0 0 14px; letter-spacing:.005em;
+}
+.sec-title em{font-style:normal; color:var(--o-deep)}
+.sec-lead{font-size:clamp(14px,1.6vw,16px); color:var(--ink-55); margin:0 0 46px; max-width:40em; line-height:2.1}
+
+/* ---------- ボタン ---------- */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:14px;
+  padding:21px 42px; border-radius:999px; font-weight:900; font-size:17px;
+  text-decoration:none; border:0; cursor:pointer; line-height:1.3;
+  background:var(--grad); color:#fff;
+  box-shadow:0 14px 30px rgba(239,108,18,.30);
+  transition:transform .16s ease, box-shadow .16s ease;
+}
+.btn:hover{transform:translateY(-3px); box-shadow:0 20px 40px rgba(239,108,18,.38)}
+.btn:active{transform:translateY(0)}
+.btn .arw{
+  width:26px; height:26px; border-radius:50%; background:rgba(255,255,255,.22);
+  display:grid; place-items:center; font-size:13px; flex:none;
+}
+
+/* ---------- CTA2：LINE相談 ＋ 面談予約 の2枚組（伊藤さんLPと同じ形） ---------- */
+.cta2{display:grid; gap:12px}
+@media(min-width:600px){ .cta2{grid-template-columns:1fr 1fr; gap:16px} }
+.cta2 .btn{width:100%; padding:19px 18px; font-size:clamp(13.5px,1.5vw,16px); gap:10px}
+.cta2__note{margin:9px 0 0; text-align:center; font-size:11.5px; font-weight:700; color:var(--ink-55)}
+/* LINEはブランド色のまま出す（学生に一番早く伝わるため） */
+.btn--line{background:#06C755; box-shadow:0 14px 30px rgba(6,199,85,.26)}
+.btn--line:hover{box-shadow:0 20px 40px rgba(6,199,85,.34)}
+.btn--line .lineico{
+  width:22px; height:22px; border-radius:50%; background:#fff; flex:none;
+  display:grid; place-items:center;
+}
+.btn--line .lineico b{font-size:7.5px; font-weight:900; color:#06C755; letter-spacing:.01em}
+
+/* ===========================================================
+   0. ヘッダー（左に名乗り／右にSNS＋CTA）
+   =========================================================== */
+.hd{position:sticky; top:0; z-index:60; background:#fff; border-bottom:1px solid rgba(30,27,25,.08)}
+.hd-in{display:flex; align-items:stretch; justify-content:space-between; gap:16px}
+.hd-brand{display:flex; align-items:center; gap:12px; text-decoration:none; padding:14px 0 14px 22px}
+.hd-mark{
+  width:34px; height:34px; border-radius:9px; background:var(--grad); flex:none;
+  display:grid; place-items:center; color:#fff; font-size:15px; font-weight:900;
+}
+.hd-name{font-size:15.5px; font-weight:900; letter-spacing:.04em; line-height:1.3}
+.hd-sub{
+  padding-left:12px; margin-left:2px; border-left:1px solid rgba(30,27,25,.16);
+  font-size:11.5px; font-weight:700; color:var(--ink-55); line-height:1.4;
+}
+.hd-right{display:flex; align-items:center; gap:12px}
+.hd-sns{display:flex; align-items:center; gap:8px}
+.hd-sns a{
+  width:34px; height:34px; border-radius:50%; flex:none;
+  border:1.5px solid rgba(30,27,25,.16); color:var(--ink);
+  display:grid; place-items:center; text-decoration:none;
+  transition:border-color .15s ease, background .15s ease, color .15s ease;
+}
+.hd-sns a:hover{border-color:var(--o-deep); background:var(--peach); color:var(--o-deep)}
+.hd-sns svg{width:17px; height:17px}
+.hd-sns b{font-size:8.5px; font-weight:900; letter-spacing:.01em}
+.hd-cta{
+  display:flex; align-items:center; gap:8px; padding:0 28px;
+  background:var(--grad); color:#fff; font-size:14.5px; font-weight:900;
+  text-decoration:none; white-space:nowrap;
+}
+.hd-cta:hover{filter:brightness(1.05)}
+@media(max-width:760px){
+  .hd-brand{gap:9px; padding:10px 0 10px 16px}
+  .hd-mark{width:28px; height:28px; border-radius:8px; font-size:13px}
+  .hd-name{font-size:13px}
+  .hd-sub{display:none}
+  .hd-right{gap:8px}
+  .hd-sns{gap:6px}
+  .hd-sns a{width:28px; height:28px}
+  .hd-sns svg{width:14px; height:14px}
+  .hd-sns b{font-size:7px}
+  .hd-cta{padding:0 14px; font-size:12px; gap:5px}
+}
+@media(max-width:345px){ .hd-name{display:none} }   /* 名前を隠すのは本当に入らない幅だけ */
+
+/* ===========================================================
+   1. FV（写真はヘッダーのすぐ下から）
+   =========================================================== */
+.hero{position:relative; padding:0 0 clamp(26px,4vw,40px); overflow:hidden; isolation:isolate}
+.hero-stage{position:relative; z-index:2}
+
+/* --- 背景の飾り：ピーチのブロブ＋細いアーチ＋キラッ --- */
+.hero-blob,.hero-arc{position:absolute; border-radius:50%; pointer-events:none; z-index:0}
+.hero-blob{background:linear-gradient(200deg,#FFE0C4 0%,#FFEFE1 52%,#FFF9F4 100%)}
+.hero-arc{border:3px solid rgba(250,130,49,.9)}
+.hero-spark{position:absolute; z-index:1; color:var(--o); pointer-events:none}
+.hero-spark svg{width:100%; height:auto; display:block}
+
+/* --- 人物（背景透過の切り抜きをそのまま置く） --- */
+/* height:auto を必ず付ける。<img height="1024"> 属性が残っているため、
+   width だけ指定すると縦に引き伸ばされる。 */
+.hero-person{position:absolute; width:auto; height:auto; max-width:none; z-index:2;
+  filter:drop-shadow(0 16px 30px rgba(120,60,20,.14));
+  /* 写真の下端が直線で切れて見えるので、下だけ溶かす */
+  -webkit-mask-image:linear-gradient(to bottom,#000 86%,rgba(0,0,0,0) 100%);
+          mask-image:linear-gradient(to bottom,#000 86%,rgba(0,0,0,0) 100%);}
+
+
+/* --- コピー --- */
+.hero-eyebrow{
+  display:inline-flex; align-items:center; gap:14px; margin:0 0 22px;
+  font-size:clamp(13px,1.5vw,15px); font-weight:700; color:var(--ink-70);
+}
+.hero-eyebrow::before,.hero-eyebrow::after{
+  content:""; width:2px; height:19px; border-radius:2px; background:var(--ink-70); opacity:.55;
+}
+.hero-eyebrow::before{transform:rotate(-20deg)}
+.hero-eyebrow::after{transform:rotate(20deg)}
+
+.hero-h{
+  font-family:var(--font-hero); font-weight:900; margin:0 0 26px; position:relative; z-index:3;
+  font-size:clamp(32px,5.2vw,58px); line-height:1.3; letter-spacing:-.005em;
+}
+.hero-h span{display:block}
+.hero-h em{font-style:normal; color:var(--o-deep)}
+
+/* オレンジのアーチとブロブの境目がこの行を横切るので、後ろに白い靄を敷いて読ませる */
+.hero-lead{position:relative; z-index:3; margin:0 0 30px;
+  font-size:clamp(14px,1.6vw,16.5px); line-height:2.2; color:var(--ink)}
+.hero-lead::before{
+  content:""; position:absolute; z-index:-1; inset:-18px -26px -16px -26px;
+  background:radial-gradient(115% 108% at 34% 50%,
+    rgba(255,255,255,.97) 0%, rgba(255,255,255,.92) 42%,
+    rgba(255,255,255,.55) 72%, rgba(255,255,255,0) 100%);
+}
+.hero-cta{position:relative; z-index:3}
+.hero-cta{max-width:560px}
+
+/* --- 実績バー（丸バッジ＋線画アイコン） --- */
+.hero-feats{
+  position:relative; z-index:3; display:grid; grid-template-columns:repeat(3,1fr);
+  gap:clamp(8px,1.6vw,20px); margin-top:clamp(26px,3.6vw,42px); max-width:520px;
+}
+.feat{display:flex; flex-direction:column; align-items:center; gap:10px; text-align:center;
+  font-size:clamp(12px,1.4vw,14px); font-weight:700}
+.feat-ico{width:clamp(48px,5vw,60px); aspect-ratio:1; border-radius:50%; background:var(--peach);
+  display:grid; place-items:center; flex:none}
+.feat svg{width:52%; height:auto; color:var(--o-deep)}
+
+/* --- スクロール誘導 --- */
+.hero-scroll{
+  position:absolute; z-index:5; right:clamp(16px,4vw,44px); bottom:clamp(14px,2.4vw,28px);
+  width:48px; height:48px; border-radius:50%; background:#fff; color:var(--ink);
+  display:grid; place-items:center; text-decoration:none;
+  box-shadow:0 8px 20px rgba(150,80,30,.18); animation:bob 2.2s ease-in-out infinite;
+}
+.hero-scroll svg{width:19px; height:19px}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(5px)}}
+@media(prefers-reduced-motion:reduce){ .hero-scroll{animation:none} }
+
+/* ---- PC（761px〜）：左にコピー、右に人物 ----
+   ★ブロブを vw だけで組むと広い画面で無限に巨大化し、人物が上に取り残されて
+     右下に大きな空白ができる（＝「PCが崩壊」の原因）。対策は3つ：
+     ①サイズに min() で上限を付ける
+     ②top ではなく bottom 基準にして、画面幅ではなくFVの高さに追従させる
+     ③人物もビューポート右端基準（calc(50% - 50vw + …)）にしてブロブと一緒に動かす
+       ※ .hero-stage は最大1180pxの中央寄せなので、% 基準だと広い画面でブロブと離れる */
+@media(min-width:761px){
+  .hero-stage{min-height:600px}
+  /* 高さは「FVの高さの何％」で持たせる＝必ず上下にはみ出すので、真円が画面内に
+     収まって“浮いたボール”に見えることがない。幅だけ min() で上限を付ける */
+  .hero-blob{width:min(66vw,1000px); height:124%; right:-8vw; top:-12%; bottom:auto}
+  .hero-arc {width:min(70vw,1060px); height:132%; right:-11vw; top:-16%; bottom:auto}
+  .hero-spark{width:clamp(46px,3.6vw,64px); right:26vw; top:8%}
+  /* ★FVの縦を詰める＝ブロブ(高さ124%)も一緒に縮み、上の空白が減る */
+  .hero-copy{width:min(560px,52%); padding:clamp(44px,5.6vw,80px) 0 clamp(40px,4vw,56px)}
+  .hero-h{margin-bottom:22px}
+  .hero-lead{margin-bottom:26px}
+  .hero-feats{margin-top:clamp(22px,2.8vw,34px); max-width:470px}
+  /* ★人物の大きさは width 一箇所で決まる。
+     小さいとブロブの上半分が空きっぱなしになるので、FVの高さの8割前後を占める値にする */
+  .hero-person{right:calc(50% - 50vw + 1.5vw); top:auto; bottom:0; width:min(60vw,920px)}
+  /* リード文の靄はスマホ専用。PCではブロブの上に白い箱として見えてしまうので消す */
+  .hero-lead::before{display:none}
+}
+
+/* ===========================================================
+/* ===========================================================
+   2. WORRY — 学生の生の悩み（チャット吹き出し）
+   =========================================================== */
+.worry{background:var(--cream); padding:clamp(64px,8vw,108px) 0; overflow:hidden}
+.worry::before{content:""; position:absolute; left:0; top:0; bottom:0; width:clamp(9px,2.2vw,24px); background:var(--grad)}
+.worry-in{display:grid; gap:clamp(16px,4vw,52px); grid-template-columns:minmax(0,1fr) minmax(0,.62fr); align-items:center}
+
+.chat{display:grid; gap:14px; max-width:620px}
+.chat-row{display:flex; align-items:center; gap:13px}
+/* イラスト側に円とリングが入っているので、枠側は素通しにする */
+.chat-av{width:66px; height:66px; flex:none; display:block}
+.chat-av img{width:100%; height:100%; object-fit:contain}
+.chat-bubble{
+  position:relative; background:#fff; border-radius:16px; padding:15px 22px;
+  font-size:clamp(14px,1.6vw,16px); font-weight:700; line-height:1.7;
+  box-shadow:0 8px 20px rgba(150,80,30,.10);
+}
+.chat-bubble::before{
+  content:""; position:absolute; left:-8px; top:50%; transform:translateY(-50%);
+  border:8px solid transparent; border-right-color:#fff; border-left:0;
+}
+.chat-row:nth-child(2){margin-left:clamp(0px,3vw,38px)}
+.chat-row:nth-child(3){margin-left:clamp(0px,1.5vw,18px)}
+.chat-row:nth-child(4){margin-left:clamp(0px,4vw,52px)}
+.chat-row:nth-child(5){margin-left:clamp(0px,2vw,24px)}
+.chat-row:nth-child(6){margin-left:clamp(0px,3.5vw,44px)}
+
+.worry-side p{margin:0 0 30px; font-size:14.5px; color:var(--ink-55); line-height:2.1}
+/* 右カラムが狭くボタン文字が折り返すので、ここだけ縦並びにする */
+.worry-side .cta2{grid-template-columns:1fr; gap:14px; max-width:340px}
+
+/* ===========================================================
+   3. PROFILE — 鎌倉さん
+   =========================================================== */
+.profile{background:var(--white)}
+.pf{display:grid; gap:clamp(16px,4vw,56px); grid-template-columns:minmax(0,.78fr) minmax(0,1fr); align-items:center}
+
+.pf-photo{width:min(100%,380px); margin-inline:auto; border-radius:var(--radius); overflow:hidden; background:#EDEBE4}
+.pf-photo img{width:100%; height:100%; object-fit:cover}
+
+.pf-name{display:flex; align-items:baseline; gap:14px; flex-wrap:wrap; margin:0 0 6px}
+.pf-name b{font-family:var(--font-hero); font-weight:900; font-size:clamp(26px,3.4vw,36px); line-height:1.45}
+.pf-name span{font-size:11.5px; color:var(--ink-55); font-weight:700; letter-spacing:.14em}
+.pf-role{
+  display:inline-block; margin:6px 0 26px; padding:6px 16px; border-radius:999px;
+  background:var(--grad); color:#fff; font-size:12.5px; font-weight:900;
+}
+.pf-facts{margin:0 0 26px; display:grid; gap:0; border-top:1px solid var(--line)}
+.pf-facts div{display:grid; grid-template-columns:96px 1fr; gap:14px; padding:13px 2px; border-bottom:1px solid var(--line); align-items:baseline}
+.pf-facts dt{font-size:12.5px; font-weight:900; color:var(--o-text); letter-spacing:.06em}
+.pf-facts dd{margin:0; font-size:15px; font-weight:700; line-height:1.75}
+.pf-facts dd .arrow{color:var(--ink-40); margin:0 6px}
+/* ★未回収の項目。埋まったら .todo ごと差し替える */
+.todo{display:inline-block; font-size:12.5px; font-weight:900; color:var(--ink-40); background:#F4F1ED; border-radius:6px; padding:2px 10px}
+.pf-msg{
+  position:relative; background:var(--ink); color:#fff; border-radius:18px; padding:24px 26px;
+  font-size:14.5px; line-height:2; margin:0;
+}
+".pf-msg::before{content:"; position:absolute; left:34px; top:-9px; border:9px solid transparent; border-bottom-color:var(--ink); border-top:0}
+
+/* SNSリンク（ロゴ画像は使わず、文字のピルで統一） */
+.pf-sns{display:flex; flex-wrap:wrap; align-items:center; gap:10px; margin-top:22px}
+.pf-sns-label{font-size:11px; font-weight:800; letter-spacing:.16em; color:var(--o-text)}
+.pf-sns a{
+  display:inline-flex; align-items:center; gap:7px; padding:9px 16px; border-radius:999px;
+  border:1.5px solid rgba(240,121,58,.42); color:var(--ink); font-size:13px; font-weight:800;
+  text-decoration:none; transition:background .15s ease, border-color .15s ease;
+}
+.pf-sns a::after{content:"↗"; font-size:11px; color:var(--o-deep)}
+.pf-sns a:hover{background:var(--peach); border-color:var(--o-deep)}
+.pf-msg .todo{background:rgba(255,255,255,.14); color:rgba(255,255,255,.72)}
+.pf-msg-label{display:block; font-size:11px; font-weight:800; letter-spacing:.16em; color:var(--o-light); margin-bottom:8px}
+
+/* ===========================================================
+   4. VOICE — 面談を受けた人たち
+   =========================================================== */
+.voice{background:var(--peach)}
+.voice-head{text-align:center; margin-bottom:clamp(38px,5vw,58px)}
+.voice-head .en{display:block; font-size:13px; letter-spacing:.3em; color:var(--o-deep)}
+.voice-head .sub{display:block; margin-top:8px; font-size:12.5px; letter-spacing:.28em; color:var(--ink-55); font-weight:700}
+.voice-head h2{
+  margin:18px 0 0; font-family:var(--font-hero); font-weight:900;
+  font-size:clamp(28px,4.6vw,52px); line-height:1.4; letter-spacing:.06em;
+}
+
+.voice-grid{display:grid; gap:22px; grid-template-columns:repeat(auto-fit,minmax(288px,1fr)); align-items:start}
+.voice-card{background:#fff; border:1px solid var(--line); border-radius:6px; display:flex; flex-direction:column}
+.voice-ba{position:relative; display:grid; grid-template-columns:1fr auto 1fr; gap:10px; align-items:center; padding:24px 22px 34px}
+.voice-ba .col{text-align:center}
+.voice-ba .lbl{display:block; font-weight:700; font-size:10.5px; letter-spacing:.22em; color:var(--ink-40); margin-bottom:6px}
+.voice-ba .txt{font-size:13.5px; font-weight:700; line-height:1.65}
+.voice-ba .col--after{align-self:start; padding-top:18px}
+.voice-ba .to{color:var(--o); font-size:15px}
+.voice-icon{
+  position:absolute; left:50%; bottom:-34px; transform:translateX(-50%); z-index:2;
+  width:68px; height:68px; border-radius:50%; background:#fff;
+  border:1px solid rgba(250,130,49,.34); box-shadow:0 0 0 6px rgba(250,130,49,.10);
+  display:grid; place-items:center;
+}
+.voice-icon img{width:42px; height:auto}
+.voice-body{border-top:1px solid var(--line); padding:50px 26px 26px; flex:1; display:flex; flex-direction:column}
+.voice-body h3{margin:0 0 14px; font-size:17px; font-weight:900; line-height:1.75}
+.voice-body p{margin:0; font-size:13.5px; color:var(--ink-70); line-height:2.1}
+.voice-who{margin-top:auto; padding-top:22px; font-size:12px; color:var(--ink-55); font-weight:700}
+.voice-who::before{content:""; display:block; height:1px; background:var(--line); margin-bottom:16px}
+
+/* ===========================================================
+   5. BOOKING
+   =========================================================== */
+.booking{background:var(--grad); color:#fff}
+.booking .sec-label{color:rgba(255,255,255,.92)}
+.booking .sec-label::before{background:rgba(255,255,255,.8)}
+.booking-head{text-align:center; margin-bottom:34px}
+.booking-head .sec-label{justify-content:center}
+.booking-head .sec-title{margin-bottom:10px}
+.booking-head p{margin:0; font-size:15px; font-weight:700; color:rgba(255,255,255,.92)}
+.booking-card{background:#fff; border-radius:26px; padding:10px 10px 6px; color:var(--ink); box-shadow:0 26px 54px rgba(150,60,20,.26); max-width:760px; margin-inline:auto}
+.booking-body{min-height:430px; padding:8px 8px 0}
+.booking-fallback{display:grid; place-items:center; gap:14px; min-height:410px; text-align:center; padding:40px 24px; color:var(--ink-55); font-size:14px; line-height:2}
+.booking-fallback strong{color:var(--ink); font-size:16px}
+.booking-note{padding:14px 16px 20px; text-align:center; font-size:12.5px; color:var(--ink-55)}
+.booking-note a{color:var(--o-text)}
+.booking-alt{margin:28px auto 0; max-width:760px; text-align:center}
+.booking-alt p{margin:0 0 12px; font-size:13.5px; font-weight:700; color:rgba(255,255,255,.95)}
+.booking-alt .btn{padding:17px 30px; font-size:15px}
+
+/* ===========================================================
+   6. FAQ
+   =========================================================== */
+.faq{background:var(--cream)}
+.faq-list{display:grid; gap:12px; max-width:840px}
+details.qa{background:#fff; border-radius:18px; padding:0 24px; border:2px solid transparent; transition:border-color .2s}
+details.qa[open]{border-color:rgba(250,130,49,.34)}
+details.qa summary{list-style:none; cursor:pointer; padding:22px 40px 22px 36px; position:relative; font-size:15.5px; font-weight:900; line-height:1.75}
+details.qa summary::-webkit-details-marker{display:none}
+details.qa summary::before{content:"Q"; position:absolute; left:0; top:21px; color:var(--o-text); font-weight:800; font-size:16px}
+details.qa summary::after{content:"＋"; position:absolute; right:2px; top:21px; color:var(--o-text); font-size:17px}
+details.qa[open] summary::after{content:"−"}
+details.qa .a{padding:0 0 24px 36px; font-size:14px; color:var(--ink-55); line-height:2.1; margin:0}
+
+/* ---------- フッター ---------- */
+.foot{background:var(--ink); color:rgba(255,255,255,.6); padding:52px 0; font-size:12.5px; line-height:2.2}
+.foot a{color:rgba(255,255,255,.82); text-decoration:none}
+.foot a:hover{text-decoration:underline}
+.foot-brand{color:#fff; font-size:19px; margin-bottom:10px; font-weight:700; letter-spacing:.22em}
+
+/* ===========================================================
+   小画面チューニング
+   2カラムの構図はPCと同じまま、文字・余白・写真の寄りだけを詰める。
+   （縦積みにしない代わりに、ここで可読性を担保している）
+   =========================================================== */
+@media(max-width:760px){
+  .wrap{width:calc(100% - 32px)}
+  .sec{padding:clamp(48px,9vw,70px) 0}
+  .sec-title{font-size:clamp(18px,4.6vw,26px); line-height:1.5}
+  .sec-label{font-size:10px; letter-spacing:.18em; margin-bottom:10px; gap:6px}
+  .sec-label::before{width:16px}
+  .btn{padding:14px 20px; font-size:13px; gap:9px}
+  .btn .arw{width:20px; height:20px; font-size:11px}
+
+  /* --- FV（スマホはモック準拠：人物を大きく重ね、コピーは1カラム） --- */
+  .hero-blob{width:152vw; height:152vw; right:-40vw; top:-52vw}
+  .hero-arc {width:163vw; height:163vw; right:-47vw; top:-58vw}
+  .hero-spark{width:44px; right:34vw; top:5vw}
+  .hero-copy{width:100%; padding:32px 0 28px}
+  .hero-eyebrow{font-size:11.5px; gap:9px; margin-bottom:16px}
+  .hero-eyebrow::before,.hero-eyebrow::after{height:15px}
+  /* ★下マージンで人物ぶんの高さを確保している。人物の width を変えたらここも合わせる */
+  .hero-h{font-size:clamp(27px,8.4vw,36px); line-height:1.32; margin-bottom:clamp(128px,42vw,185px)}
+  /* right を浅くすると顔が左に来て見出しに被る。
+     width を変えたら right と .hero-h の下マージンも必ずセットで調整する */
+  .hero-person{right:-34%; top:52px; width:130%}
+  .hero-lead{font-size:13.5px; line-height:2.05; margin-bottom:22px}
+  .hero-cta .btn{padding:16px 12px; font-size:14px}
+  .hero-feats{max-width:none; gap:6px; margin-top:24px}
+  .feat{font-size:11px; gap:7px}
+  .feat-ico{width:46px}
+  .hero-scroll{width:40px; height:40px; right:8px; bottom:6px}
+
+  /* --- WORRY --- */
+  .worry{padding:48px 0}
+  .worry::before{width:7px}
+  /* 右カラムが狭すぎると見出しが語中で折れるので取り分を増やす */
+  .worry-in{grid-template-columns:minmax(0,1fr) minmax(0,.86fr); gap:12px}
+  .worry-side .sec-title{font-size:16px; line-height:1.6}
+  .worry-side .btn{width:100%; padding:12px 8px; font-size:11.5px; gap:6px}
+  .worry-side .btn .arw{width:17px; height:17px; font-size:10px}
+  .chat{gap:8px}
+  .chat-row{gap:8px}
+  .chat-av{width:42px; height:42px}
+  .chat-bubble{padding:8px 12px; font-size:11px; border-radius:11px; line-height:1.55}
+  .chat-bubble::before{left:-6px; border-width:6px; border-left:0}
+  .chat-row:nth-child(2),.chat-row:nth-child(5){margin-left:10px}
+  .chat-row:nth-child(3){margin-left:5px}
+  .chat-row:nth-child(4),.chat-row:nth-child(6){margin-left:14px}
+  .worry-side p{font-size:11px; line-height:1.9; margin-bottom:16px}
+
+  /* --- PROFILE --- */
+  .pf{align-items:start}      /* 中央揃えだと写真だけ下がって見えるので上で揃える */
+  .pf-photo{width:100%}
+  .pf-name{gap:7px; margin-bottom:2px}
+  .pf-name b{font-size:19px}
+  .pf-name span{font-size:9px; letter-spacing:.1em}
+  .pf-role{font-size:10.5px; padding:4px 11px; margin:4px 0 14px}
+  .pf-facts{margin-bottom:16px}
+  .pf-facts div{grid-template-columns:58px 1fr; gap:8px; padding:8px 0}
+  .pf-facts dt{font-size:10px}
+  .pf-facts dd{font-size:12px; line-height:1.6}
+  .todo{font-size:10.5px; padding:1px 8px}
+  .pf-msg{padding:15px 16px; font-size:11.5px; line-height:1.85; border-radius:14px}
+  .pf-msg::before{left:20px}
+  .pf-sns{gap:7px; margin-top:16px}
+  .pf-sns a{padding:7px 12px; font-size:11.5px; gap:5px}
+  .pf-sns-label{font-size:10px; width:100%}
+  .pf-msg-label{font-size:9.5px; margin-bottom:5px}
+}
+
+/* ===========================================================
+   中間幅（761〜1000px）
+   2カラムのまま desktop の文字サイズだと右カラムが潰れるので、ここで一段落とす。
+   ※ 760px以下のブロックより後に置くと打ち消してしまうため、必ず範囲指定で書く。
+   =========================================================== */
+@media(min-width:761px) and (max-width:1000px){
+  .sec{padding:clamp(56px,7vw,86px) 0}
+  .sec-title{font-size:clamp(21px,2.9vw,28px); line-height:1.5}
+  .sec-lead{font-size:14px; margin-bottom:34px}
+
+  .worry{padding:clamp(56px,7vw,86px) 0}
+  .worry-in{grid-template-columns:minmax(0,1fr) minmax(0,.82fr); gap:22px}
+  .worry-side .sec-title{font-size:22px; line-height:1.55}
+  .worry-side p{font-size:12.5px; line-height:1.95; margin-bottom:20px}
+  .worry-side .btn{padding:14px 20px; font-size:13.5px}
+  .chat{gap:11px}
+  .chat-av{width:52px; height:52px}
+  .chat-bubble{padding:11px 16px; font-size:13px}
+
+  .pf{grid-template-columns:minmax(0,.7fr) minmax(0,1fr); gap:26px; align-items:start}
+  .pf-photo{width:100%}
+  .pf-name b{font-size:26px}
+  .pf-facts div{grid-template-columns:74px 1fr; padding:10px 0}
+  .pf-facts dd{font-size:13.5px}
+  .pf-msg{padding:18px 20px; font-size:13px}
+
+  .voice-head h2{font-size:32px}
+  .voice-body h3{font-size:15.5px}
+  .voice-ba .txt{font-size:12.5px}
+}
+
+/* さらに狭い端末（〜380px）は写真側を少し譲る */
+@media(max-width:380px){
+  .pf-facts div{grid-template-columns:52px 1fr}
+}
+
+/* ---------- リビール ---------- */
+/* JSが動くときだけ隠す。動かない環境でも本文が消えないようにするため */
+.js-rv .rv{opacity:0; transform:translateY(22px); transition:opacity .7s ease, transform .7s ease}
+.js-rv .rv.in{opacity:1; transform:none}
+@media(prefers-reduced-motion:reduce){ .rv{opacity:1; transform:none; transition:none} }
+</style>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5KH7WRCP');</script>
+<!-- End Google Tag Manager -->
+<script>
+/* 着地時にLP識別子と流入情報を dataLayer 変数として積む（event無し＝新トリガー不要）。
+   lp 値 'newgrads_kamakura' は GTMトリガーの条件値。公開後に変えないこと。（2026-10-01 Claude追加） */
+(function(){
+  var p=new URLSearchParams(location.search);
+  window.dataLayer=window.dataLayer||[];
+  window.dataLayer.push({
+    lp:'newgrads_kamakura',
+    utm_source:p.get('utm_source')||'', utm_medium:p.get('utm_medium')||'',
+    utm_campaign:p.get('utm_campaign')||'', utm_content:p.get('utm_content')||'',
+    ttclid:p.get('ttclid')||'', fbclid:p.get('fbclid')||''
+  });
+})();
+</script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5KH7WRCP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- ============================ 0. ヘッダー ============================ -->
+<header class="hd">
+  <div class="hd-in">
+    <a href="#top" class="hd-brand">
+      <span class="hd-mark">鎌</span>
+      <span class="hd-name">鎌倉 柊哉</span>
+      <span class="hd-sub">元大手人事の<br>就活相談</span>
+    </a>
+
+    <div class="hd-right">
+      <nav class="hd-sns" aria-label="SNS">
+        <a href="https://www.tiktok.com/@gekokujyo_shukatu00" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14.4 3v11.6a3.4 3.4 0 1 1-2.7-3.3"/>
+            <path d="M14.4 3c.4 2.7 2.4 4.6 5.1 4.8"/>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/career_map_magazine" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="5.2"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+        <a href="https://note.com/shuya_k/portal" target="_blank" rel="noopener" aria-label="note" title="note"><b>note</b></a>
+      </nav>
+
+      <a href="#booking" class="hd-cta" data-cv="meeting">無料で相談する<span aria-hidden="true">›</span></a>
+    </div>
+  </div>
+</header>
+
+<!-- ============================ 1. FV ============================ -->
+<section class="hero" id="top">
+  <span class="hero-blob" aria-hidden="true"></span>
+  <span class="hero-arc" aria-hidden="true"></span>
+  <span class="hero-spark" aria-hidden="true">
+    <svg viewBox="0 0 64 64" fill="currentColor">
+      <path d="M40 4c1.6 8.6 5.8 12.8 14.4 14.4C45.8 20 41.6 24.2 40 32.8 38.4 24.2 34.2 20 25.6 18.4 34.2 16.8 38.4 12.6 40 4Z"/>
+      <path d="M14 26c1.1 5.7 3.9 8.5 9.6 9.6C17.9 36.7 15.1 39.5 14 45.2 12.9 39.5 10.1 36.7 4.4 35.6 10.1 34.5 12.9 31.7 14 26Z"/>
+    </svg>
+  </span>
+
+  <div class="wrap hero-stage">
+    <img class="hero-person" src="assets/hero-kamakura.png" alt="キャリアアドバイザー 鎌倉 柊哉" width="1536" height="1024">
+    <div class="hero-copy">
+      <p class="hero-eyebrow">まわりより出遅れてる気がする人へ</p>
+
+      <h1 class="hero-h">
+        <span><em>元大手人事</em>が</span>
+        <span>「就活」を</span>
+        <span>伝授します！</span>
+      </h1>
+
+      <p class="hero-lead">
+        何から始めればいいかわからない。<br>
+        大丈夫。ぜんぶ一から教えます。
+      </p>
+
+      <div class="hero-cta cta2">
+        <div>
+          <a href="https://lin.ee/XtKKfCz" class="btn btn--line" target="_blank" rel="noopener" data-cv="line">
+            <span class="lineico" aria-hidden="true"><b>LINE</b></span>LINEで相談する
+          </a>
+          <p class="cta2__note">所要1分／質問だけでもOK</p>
+        </div>
+        <div>
+          <a href="#reflame-booking" class="btn" data-cv="meeting">60分の面談を予約する<span class="arw" aria-hidden="true">›</span></a>
+          <p class="cta2__note">オンライン／何度でも無料</p>
+        </div>
+      </div>
+
+      <div class="hero-feats">
+        <div class="feat">
+          <span class="feat-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 11h18"/>
+            </svg>
+          </span>
+          ES・面接の対策
+        </div>
+        <div class="feat">
+          <span class="feat-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="12" rx="2"/><path d="M2 20h20"/>
+            </svg>
+          </span>
+          オンラインOK
+        </div>
+        <div class="feat">
+          <span class="feat-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9"/><path d="M8.5 8l3.5 4 3.5-4M12 12v5M9 13.5h6M9 16h6"/>
+            </svg>
+          </span>
+          何度でも無料
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a class="hero-scroll" href="#worry" aria-label="下へスクロール">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+  </a>
+</section>
+
+<!-- ============================ 2. WORRY（学生の生の悩み） ============================ -->
+<section class="worry" id="worry">
+  <div class="wrap worry-in">
+    <div class="chat">
+      <!-- ★アバターは画像未納品。img/avatar-1〜6.png を入れたら数字を <img> に差し替える（README参照） -->
+      <div class="chat-row rv"><span class="chat-av"><img src="assets/moyamoya/worry2.png" alt="" aria-hidden="true"></span><div class="chat-bubble">やりたいことがわからない</div></div>
+      <div class="chat-row rv"><span class="chat-av"><img src="assets/moyamoya/worry5.png" alt="" aria-hidden="true"></span><div class="chat-bubble">このままでいいのかな？</div></div>
+      <div class="chat-row rv"><span class="chat-av"><img src="assets/moyamoya/worry4.png" alt="" aria-hidden="true"></span><div class="chat-bubble">面接で何を話せばいいかわからない</div></div>
+      <div class="chat-row rv"><span class="chat-av"><img src="assets/moyamoya/worry3.png" alt="" aria-hidden="true"></span><div class="chat-bubble">自己分析、何が正解かわからない</div></div>
+      <div class="chat-row rv"><span class="chat-av"><img src="assets/moyamoya/worry1.png" alt="" aria-hidden="true"></span><div class="chat-bubble">地方で情報が少ない</div></div>
+      <div class="chat-row rv"><span class="chat-av"><img src="assets/moyamoya/worry6.png" alt="" aria-hidden="true"></span><div class="chat-bubble">就活を相談できる先輩がいない</div></div>
+    </div>
+
+    <div class="worry-side rv">
+      <span class="sec-label">WORRY</span>
+      <h2 class="sec-title">あなたのモヤモヤ、<br>当てはまりませんか？</h2>
+      <p>就活の知識ゼロでも大丈夫。<br>わからないことを、わからないまま持ってきてください。</p>
+      <div class="cta2">
+        <div>
+          <a href="https://lin.ee/XtKKfCz" class="btn btn--line" target="_blank" rel="noopener" data-cv="line">
+            <span class="lineico" aria-hidden="true"><b>LINE</b></span>LINEで相談する
+          </a>
+          <p class="cta2__note">所要1分／質問だけでもOK</p>
+        </div>
+        <div>
+          <a href="#reflame-booking" class="btn" data-cv="meeting">60分の面談を予約する<span class="arw" aria-hidden="true">›</span></a>
+          <p class="cta2__note">オンライン／何度でも無料</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ 3. PROFILE ============================ -->
+<section class="sec profile" id="profile">
+  <div class="wrap">
+    <span class="sec-label rv">PROFILE</span>
+
+    <div class="pf">
+      <div class="pf-photo rv">
+        <img src="assets/profile-kamakura.jpg" alt="鎌倉 柊哉" loading="lazy" width="687" height="1024">
+      </div>
+
+      <div class="rv">
+        <p class="pf-name"><b>鎌倉 柊哉</b><span>KAMAKURA SHUYA</span></p>
+        <span class="pf-role">新卒キャリアアドバイザー</span>
+
+        <dl class="pf-facts">
+          <div><dt>出身</dt><dd>岐阜県</dd></div>
+          <div><dt>大学</dt><dd>富山大学<span class="arrow">→</span>シェフィールド大学</dd></div>
+          <div><dt>前職</dt><dd>パーソルキャリア株式会社　人事</dd></div>
+          <!-- ★回収中：本人から届いたら .todo を本文に置き換える -->
+          <div><dt>学生時代</dt><dd>スポーツ支援のコーチングビジネス立ち上げ／バスケットボール</dd></div>
+          <div><dt>趣味</dt><dd>サウナ、漫画、カフェ巡り</dd></div>
+        </dl>
+
+        <p class="pf-msg">
+          <span class="pf-msg-label">MESSAGE</span>
+          就活の相談、周りに話せない人は意外と多いです！<br>
+          一人で進めず、一緒に進めていきましょう。<br>
+          ぜひ気軽に相談してください＾＾
+        </p>
+
+        <div class="pf-sns">
+          <span class="pf-sns-label">SNS</span>
+          <a href="https://lin.ee/XtKKfCz" target="_blank" rel="noopener" data-cv="line">LINE</a>
+          <a href="https://www.tiktok.com/@gekokujyo_shukatu00" target="_blank" rel="noopener">TikTok</a>
+          <a href="https://www.instagram.com/career_map_magazine" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://note.com/shuya_k/portal" target="_blank" rel="noopener">note</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ 4. VOICE（面談を受けた人たち） ============================ -->
+<section class="sec voice" id="voice">
+  <div class="wrap">
+    <div class="voice-head rv">
+      <span class="en">VOICE</span>
+      <span class="sub">学生の声</span>
+      <h2>面談を受けた人たち</h2>
+    </div>
+
+    <div class="voice-grid">
+      <article class="voice-card rv">
+        <div class="voice-ba">
+          <div class="col"><span class="lbl">BEFORE</span><span class="txt">サマー全落ち</span></div>
+          <span class="to" aria-hidden="true">→</span>
+          <div class="col col--after"><span class="lbl">AFTER</span><span class="txt">年内内定Get</span></div>
+          <span class="voice-icon"><img src="assets/voice/case1.png" alt="" aria-hidden="true"></span>
+        </div>
+        <div class="voice-body">
+          <h3>「サマー全落ちの絶望から立ち直れました！」</h3>
+          <p>人事が何を見ているのかを丁寧に教えてくれて、なぜサマー落ちたのか分析・改善することができました</p>
+          <div class="voice-who">南山大学・4年生</div>
+        </div>
+      </article>
+
+      <article class="voice-card rv">
+        <div class="voice-ba">
+          <div class="col"><span class="lbl">BEFORE</span><span class="txt">孤独で就活</span></div>
+          <span class="to" aria-hidden="true">→</span>
+          <div class="col col--after"><span class="lbl">AFTER</span><span class="txt">納得する企業に内定</span></div>
+          <span class="voice-icon"><img src="assets/voice/case3.png" alt="" aria-hidden="true"></span>
+        </div>
+        <div class="voice-body">
+          <p>教育学部・地方大学なこともあり相談できる相手がいませんでした…。しゅうやさんが親身に向き合ってくれたおかげで無事納得する就活ができました！</p>
+          <div class="voice-who">島根大学・4年生</div>
+        </div>
+      </article>
+
+      <article class="voice-card rv">
+        <div class="voice-ba">
+          <div class="col"><span class="lbl">BEFORE</span><span class="txt">学歴コンプを抱えて就活スタート</span></div>
+          <span class="to" aria-hidden="true">→</span>
+          <div class="col col--after"><span class="lbl">AFTER</span><span class="txt">コンサル業界に内定承諾</span></div>
+          <span class="voice-icon"><img src="assets/voice/case2.png" alt="" aria-hidden="true"></span>
+        </div>
+        <div class="voice-body">
+          <p>大学受験に失敗し、本来の第一志望の大学に行った人たちと肩を並べられる就活がしたいと就活をスタート。学歴コンプを抱えていましたが、これまでの僕の経験をきちんとまとめてくれ、夜中まで一緒に対策してくれたおかげで今コンサルで働けています。</p>
+          <div class="voice-who">近畿大学・4年生</div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ 5. BOOKING ============================ -->
+<section class="sec booking" id="booking">
+  <div class="wrap">
+    <div class="booking-head rv">
+      <span class="sec-label">BOOKING</span>
+      <h2 class="sec-title">このまま日程を選べます。</h2>
+      <p>無料就活相談（60分・オンライン）</p>
+    </div>
+
+    <div class="booking-card rv" id="reflame-booking">
+      <div class="booking-body">
+        <div id="reflame-booking-widget">
+          <!-- 予約ウィジェット未読込時のフォールバック（ローカル確認・CSP制限時はこちらが出る） -->
+          <div class="booking-fallback" id="booking-fallback">
+            <strong>予約カレンダーを読み込んでいます…</strong>
+            <span>表示されない場合は、通信環境をご確認のうえ再読み込みしてください。<br>お急ぎの方は<a href="https://reflame.co.jp/" style="color:#C9541A">運営会社サイト</a>よりお問い合わせください。</span>
+          </div>
+        </div>
+        <!-- 鎌倉さん専用スラッグ。2026-09-29 19:54 にSF側で tiktoklive-kamakura → sns-kamakura へ改名されたため追随（2026-10-01 Claude）。
+             data-target は本LPの枠組みに合わせて #reflame-booking-widget のままにすること。
+             #reflame-booking（カード自体）に向けると下の注記ごと描き換えられる。 -->
+        <script src="https://designer.my.site.com/schedulingvforcesite/services/apexrest/booking/v1/embed.js" data-slug="sns-kamakura" data-target="#reflame-booking-widget"></script>
+      </div>
+      <p class="booking-note">
+        <a href="https://reflame.co.jp/privacy/">個人情報の取り扱い</a>に同意して予約します
+      </p>
+    </div>
+
+    <div class="booking-alt rv">
+      <p>日程が合わない／まず質問だけしたい方は</p>
+      <a href="https://lin.ee/XtKKfCz" class="btn btn--line" target="_blank" rel="noopener" data-cv="line">
+        <span class="lineico" aria-hidden="true"><b>LINE</b></span>LINEで相談する
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ 6. FAQ ============================ -->
+<section class="sec faq" id="faq">
+  <div class="wrap">
+    <div class="rv">
+      <span class="sec-label">FAQ</span>
+      <h2 class="sec-title">よくある質問</h2>
+    </div>
+    <div class="faq-list rv">
+      <details class="qa">
+        <summary>本当に無料ですか？</summary>
+        <p class="a">はい、参加費はかかりません。学生の方からお金をいただくことは一切ありません。</p>
+      </details>
+      <details class="qa">
+        <summary>就活エージェントの面談ですか？ 企業を紹介されますか？</summary>
+        <p class="a">求人のご紹介もできますが、必須ではありません。相談だけで終えることもできます。開始時に「紹介あり／なし」を確認します。</p>
+      </details>
+      <details class="qa">
+        <summary>何年卒が対象ですか？</summary>
+        <p class="a">26・27・28卒の方が対象です。既卒の方はご相談ください。</p>
+      </details>
+      <details class="qa">
+        <summary>準備していくことはありますか？</summary>
+        <p class="a">特にありません。ESや自己分析シートがあれば共有いただけますが、なくても問題ありません。</p>
+      </details>
+      <details class="qa">
+        <summary>顔出しは必要ですか？ 服装は？</summary>
+        <p class="a">顔出しなし・私服で大丈夫です。移動中や自宅から、リラックスした状態で参加してください。</p>
+      </details>
+      <details class="qa">
+        <summary>学歴に自信がないのですが、大丈夫ですか？</summary>
+        <p class="a">大丈夫です。大学名で対策の中身を変えることはありません。むしろ「学歴で不利かも」と感じている方ほど、伝え方を整えるだけで結果が変わります。</p>
+      </details>
+      <details class="qa">
+        <summary>1回だけの相談でも大丈夫ですか？</summary>
+        <p class="a">大丈夫です。継続の義務はありません。必要になったタイミングでまた予約していただけます。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ フッター ============================ -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-brand">EVANGE</div>
+    株式会社REFLAME<br>
+    有料職業紹介事業許可番号：27-ユ-303562<br>
+    <a href="https://reflame.co.jp/privacy/">プライバシーポリシー</a>　|　<a href="https://reflame.co.jp/">運営会社</a>
+  </div>
+</footer>
+
+<script>
+/* ---- スクロールリビール ---- */
+(function(){
+  document.documentElement.classList.add('js-rv');
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, {rootMargin:'0px 0px -12% 0px', threshold:.08});
+  document.querySelectorAll('.rv').forEach(function(el,i){
+    el.style.transitionDelay = (Math.min(i,4)*60) + 'ms';
+    io.observe(el);
+  });
+})();
+
+/* ---- 予約ウィジェットが描画されたらフォールバック文を消す ---- */
+(function(){
+  var host = document.getElementById('reflame-booking-widget');
+  var fb   = document.getElementById('booking-fallback');
+  if(!host || !fb) return;
+  var mo = new MutationObserver(function(){
+    if(host.children.length > 1 || host.querySelector('iframe')){ fb.remove(); mo.disconnect(); }
+  });
+  mo.observe(host, {childList:true, subtree:true});
+  // 一定時間たっても描画されないとき（許可ドメイン外・確認用ページなど）は文言を切り替える
+  setTimeout(function(){
+    if(!document.body.contains(fb)) return;
+    fb.innerHTML = '<strong>ここに予約カレンダーが表示されます</strong>'
+      + '<span>この確認用ページでは読み込めません（本番ドメインでのみ動作します）。<br>'
+      + 'お問い合わせは<a href="https://reflame.co.jp/" style="color:#C9541A">運営会社サイト</a>から。</span>';
+  }, 6000);
+})();
+
+/* ============================================================
+   予約完了 → サンクスページへ遷移（アフィリエイト成果の起点）
+   SF日程調整ツールは予約確定時に 'reflame-booking:done' を発火する（bubbles:true）。
+
+   ★ detail.type で判定してはいけない。
+     ゲートで「お断り」になった場合も type は 'booking' のまま飛んでくる
+     （embed.js の thanks() が予約確定とお断りで兼用のため）。
+     bookingId が入っているのは予約が確定したときだけ。
+     type で判定すると失注リードが成果として計上され、報酬の誤支払いになる。
+   ★ 遷移は THANKS_PATH を設定したときだけ走る（未設置なら遷移しない＝404を出さない）。
+   ============================================================ */
+(function () {
+  var THANKS_PATH = '';   /* 例: 'thanks/' */
+
+  var done = false;
+  document.addEventListener('reflame-booking:done', function (e) {
+    var d = (e && e.detail) || {};
+    var bookingId = String(d.bookingId || '');
+    if (!bookingId || done) return;      // お断り・フォームのみ回答は成果にしない
+    done = true;
+
+    var p = new URLSearchParams(window.location.search);
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'lead_submit',
+      lp: 'newgrads_kamakura',   /* 公開後に変えない（GTMの条件値） */
+      cv_source: 'embed',
+      booking_id: bookingId,
+      utm_source: p.get('utm_source') || '',
+      utm_medium: p.get('utm_medium') || '',
+      utm_campaign: p.get('utm_campaign') || '',
+      ttclid: p.get('ttclid') || ''
+    });
+
+    if (!THANKS_PATH) return;
+
+    var url = THANKS_PATH + '?booking_id=' + encodeURIComponent(bookingId);
+    p.forEach(function (v, k) {
+      if (/^utm_/i.test(k) && v) url += '&' + encodeURIComponent(k) + '=' + encodeURIComponent(v);
+    });
+    setTimeout(function () { window.location.href = url; }, 1200);
+  });
+})();
+</script>
+<!-- ============ 計測（2026-10-01 Claude追加） ============
+     ① CTAクリック: data-cv="line" / "meeting" を cta_click として送る（CVではない・中間指標）
+     ② 予約CV: 枠 sns-kamakura は cvEnabled=false（config API 2026-10-01実測）＝埋め込みはCVを送らない。
+        上の lead_submit が唯一の送信元（二重計測にならない）。
+        ★枠側を cvEnabled=true に変えたら、上の lead_submit を消すこと（1予約=generate_lead 2件になる）。
+================================================================ -->
+<script>
+(function(){
+  window.dataLayer=window.dataLayer||[];
+  document.addEventListener('click',function(e){
+    var el=e.target.closest&&e.target.closest('[data-cv]');
+    if(!el) return;
+    window.dataLayer.push({event:'cta_click', lp:'newgrads_kamakura', cv_type:el.getAttribute('data-cv')});
+  },true);
+})();
+</script>
+</body>
+</html>
